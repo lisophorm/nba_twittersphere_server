@@ -6,7 +6,7 @@ date_default_timezone_set("Europe/London");
 $tweetdelay=0;
 
 // true -> tweets go on screen without moderator  false -> every tweet must be approved from the backoffice
-$autoapprove=false;
+$autoapprove=true;
 
 // number of the tweets in the display queue. They'll be the most recend
 $totaltweets=50;

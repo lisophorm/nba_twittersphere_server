@@ -3,7 +3,7 @@
 $config['mysql_host'] = "localhost";
 $config['mysql_user'] = "tesco";
 $config['mysql_pass'] = "tesco";
-$config['db_name']    = "hp_twitter";
+$config['db_name']    = "twittersphere";
 $config['table_name'] = "root";
  
 //connect to host
