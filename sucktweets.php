@@ -4,19 +4,6 @@ require_once('Connections/localhost.php'); ?>
 <?php
 	
 	
-session_start();
-
-$current_sessionid = session_id();
-
-session_regenerate_id();
-
-$new_sessionid = session_id();
-
-echo "Old Session: $old_sessionid<br />";
-echo "New Session: $new_sessionid<br />";
-
-
-	
 	function moderate($phrase,$dictionaryfile) {
 	$file = file_get_contents($dictionaryfile, true);
 	$dictionary = preg_split( '/\r\n|\r|\n/', trim($file) );

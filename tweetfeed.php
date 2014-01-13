@@ -1,6 +1,12 @@
 <?php require_once('settings.php'); ?><?php
 
-
+	if(!isset($_COOKIE['twitter_session'])) {
+		$sessionval=substr(sha1(rand()), 0, 32);
+		setcookie('twitter_session', $sessionval,time()+360000);
+		$_COOKIE['twitter_session'] = $sessionval;
+	} else {
+		$sessionval=$_COOKIE['twitter_session'];
+	}
 
 //database configuration
 $config['mysql_host'] = "localhost";
@@ -26,7 +32,11 @@ if(isset($_GET['numberOfPosts'])) {
 }
 
 if($_GET['query']=="initTweets") {
-	$sql = "update tweets set published=0";
+	
+	if (!$result = mysql_query("INSERT ignore into currenttweet (session_id) VALUES ('".$sessionval."')"))
+  		 die("Query set currenttweet session_id failed.".$sql);
+	
+	$sql = "delete from published_tweets where session_id='".$sessionval."'";
 
 	if (!$result = mysql_query($sql))
 	   die("Query failed.".$sql);
@@ -35,7 +45,7 @@ if($_GET['query']=="initTweets") {
 if($_GET['query']=="newTweets") {
 	$totaltweets=1;
 	
-	if (!$result = mysql_query("select * from currenttweet where id=1"))
+	if (!$result = mysql_query("select * from currenttweet where session_id='".$sessionval."'"))
   		 die("Query reset tweetdisplay failed.".$sql);
 		 
 	$get_id = mysql_fetch_assoc($result);
@@ -51,7 +61,9 @@ if(isset($GET['int'])) {
 	$querydate="mysqldate < DATE_SUB(now(),INTERVAL $tweetdelay MINUTE)";
 }
 
-$sql = "SELECT * FROM tweets where approved=1 and mysqldate < DATE_SUB(now(),INTERVAL $tweetdelay MINUTE) ".$tweetQuery." and published=0 order by mysqldate desc limit ".$totaltweets;
+//and not EXISTS (select * from published_tweets WHERE published_tweets.sourceId=tweets.sourceId) order by mysqldate desc limit
+
+$sql = "SELECT * FROM tweets where approved=1 and mysqldate < DATE_SUB(now(),INTERVAL 0 MINUTE) ".$tweetQuery." and not EXISTS (select * from published_tweets WHERE published_tweets.sourceId=tweets.sourceId) order by mysqldate desc limit ".$totaltweets;
 
 if (!$result = mysql_query($sql))
    die("Query reset tweetdisplay failed.".$sql);
@@ -76,7 +88,7 @@ if(mysql_num_rows($result)>0)
 		$rowset[]= $get_info;
 
 			
-		$sql = "update tweets set published=1 where id=".$get_info['id'];
+		$sql = "insert into published_tweets (published_tweets.sourceId,published_tweets.session_id) values ('".$get_info['sourceId']."','".$sessionval."')";
 
 		if (!$innerresult = mysql_query($sql))
 		   die("Query set lastwteet failed.".$sql);
@@ -88,7 +100,7 @@ if(mysql_num_rows($result)>0)
 	setcookie("lastTweet", $lasttweet, time()+360000);
 	
 	// updates in the database the last displayed tweet
-	$sql = "update currenttweet set current_tweet=".($lasttweet-1);
+	$sql = "update currenttweet set current_tweet=".($lasttweet-1)." where session_id='".$sessionval."'";
 
 	if (!$result = mysql_query($sql))
 	   die("Query set lastwteet failed.".$sql);

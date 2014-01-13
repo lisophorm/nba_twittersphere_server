@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50533
 File Encoding         : 65001
 
-Date: 2014-01-13 12:44:36
+Date: 2014-01-13 17:34:33
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -55,8 +55,10 @@ DROP TABLE IF EXISTS `currenttweet`;
 CREATE TABLE `currenttweet` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `current_tweet` int(32) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `session_id` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `session_id` (`session_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Table structure for instagram
@@ -108,6 +110,18 @@ CREATE TABLE `instagram_messages` (
 ) ENGINE=MyISAM AUTO_INCREMENT=34249 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
+-- Table structure for published_tweets
+-- ----------------------------
+DROP TABLE IF EXISTS `published_tweets`;
+CREATE TABLE `published_tweets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sourceId` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `session_id` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `twitter_id` (`sourceId`,`session_id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=654891 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
 -- Table structure for tweets
 -- ----------------------------
 DROP TABLE IF EXISTS `tweets`;
@@ -134,4 +148,4 @@ CREATE TABLE `tweets` (
   `sweardebug` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`),
   UNIQUE KEY `twitter_id` (`sourceId`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=654696 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=654895 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
