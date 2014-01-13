@@ -1,0 +1,841 @@
+/fucker/
+/\bf.*ck\b/
+/fuck*/
+/nigger/
+/(?!nagger)(n.*gger)/
+/nigga/
+/tax/
+/tax/
+/fuckin*/
+/fuckin/
+/(?!count|caunt)(\bc.*nt\b)/
+/(?!shout|shat|sheet|shut)(\bsh.*t\b)/
+/\bass\b/
+/ass lick/
+/asses/
+/asshole/
+/assholes/
+/asskisser/
+/asswipe/
+/balls/
+/bastard/
+/beastial/
+/beastiality/
+/beastility/
+/beaver/
+/belly whacker/
+/bestial/
+/bestiality/
+/bitch/
+/bitcher/
+/bitchers/
+/bitches/
+/bitchin/
+/bitching/
+/blow job/
+/blowjob/
+/blowjobs/
+/bonehead/
+/boner/
+/brown eye/
+/browneye/
+/browntown/
+/bucket cunt/
+/bull shit/
+/bullshit/
+/bum/
+/bung hole/
+/butch/
+/butt/
+/butt breath/
+/butt fucker/
+/butt hair/
+/buttface/
+/buttfuck/
+/buttfucker/
+/butthead/
+/butthole/
+/buttpicker/
+/chink/
+/circle jerk/
+/clam/
+/clit/
+/cobia/
+/cock/
+/cocks/
+/cocksuck/
+/cocksucked/
+/cocksucker/
+/cocksucking/
+/cocksucks/
+/cooter/
+/crap/
+/cum/
+/cummer/
+/cumming/
+/cums/
+/cumshot/
+/cunilingus/
+/cunillingus/
+/cunnilingus/
+/cunt/
+/cuntlick/
+/cuntlicker/
+/cuntlicking/
+/cunts/
+/cyberfuc/
+/cyberfuck/
+/cyberfucked/
+/cyberfucker/
+/cyberfuckers/
+/cyberfucking/
+/damn/
+/dick/
+/dike/
+/dildo/
+/dildos/
+/dink/
+/dinks/
+/dipshit/
+/dong/
+/douche bag/
+/dumbass/
+/dyke/
+/ejaculate/
+/ejaculated/
+/ejaculates/
+/ejaculating/
+/ejaculatings/
+/ejaculation/
+/fag/
+/fagget/
+/fagging/
+/faggit/
+/faggot/
+/faggs/
+/fagot/
+/fagots/
+/fags/
+/fart/
+/farted/
+/farting/
+/fartings/
+/farts/
+/farty/
+/fatass/
+/fatso/
+/felatio/
+/fellatio/
+/fingerfuck/
+/fingerfucked/
+/fingerfucker/
+/fingerfuckers/
+/fingerfucking/
+/fingerfucks/
+/fistfuck/
+/fistfucked/
+/fistfucker/
+/fistfuckers/
+/fistfucking/
+/fistfuckings/
+/fistfucks/
+/fuck/
+/fucked/
+/fucker/
+/fuckers/
+/fuckin/
+/fucking/
+/fuckings/
+/fuckme/
+/fucks/
+/fuk/
+/fuks/
+/furburger/
+/gangbang/
+/gangbanged/
+/gangbangs/
+/gaysex/
+/gazongers/
+/goddamn/
+/gonads/
+/gook/
+/guinne/
+/hard on/
+/hardcoresex/
+/homo/
+/hooker/
+/horniest/
+/horny/
+/hotsex/
+/hussy/
+/jack off/
+/jackass/
+/jacking off/
+/jackoff/
+/jack-off/
+/jap/
+/jerk/
+/jerk-off/
+/jism/
+/jiz/
+/jizm/
+/jizz/
+/kike/
+/kock/
+/kondum/
+/kondums/
+/kraut/
+/kum/
+/kummer/
+/kumming/
+/kums/
+/kunilingus/
+/lesbian/
+/lesbo/
+/merde/
+/mick/
+/mothafuck/
+/mothafucka/
+/mothafuckas/
+/mothafuckaz/
+/mothafucked/
+/mothafucker/
+/mothafuckers/
+/mothafuckin/
+/mothafucking/
+/mothafuckings/
+/mothafucks/
+/motherfuck/
+/motherfucked/
+/motherfucker/
+/motherfuckers/
+/motherfuckin/
+/motherfucking/
+/motherfuckings/
+/motherfucks/
+/muff/
+/nigger/
+/niggers/
+/orgasim/
+/orgasims/
+/orgasm/
+/orgasms/
+/pecker/
+/penis/
+/phonesex/
+/phuk/
+/phuked/
+/phuking/
+/phukked/
+/phukking/
+/phuks/
+/phuq/
+/pimp/
+/piss/
+/pissed/
+/pissrr/
+/pissers/
+/pisses/
+/pissin/
+/pissing/
+/pissoff/
+/prick/
+/pricks/
+/pussies/
+/pussy/
+/pussys/
+/queer/
+/retard/
+/schlong/
+/screw/
+/sheister/
+/shit/
+/shited/
+/shitfull/
+/shiting/
+/shitings/
+/shits/
+/shitted/
+/shitter/
+/shitters/
+/shitting/
+/shittings/
+/shitty/
+/slag/
+/sleaze/
+/slut/
+/sluts/
+/smut/
+/snatch/
+/spunk/
+/starfucks/
+/starsucks/
+/sucks/
+/tax/
+/taxes/
+/corporation tax/
+/thiefs/
+/thieves/
+/thieving/
+/twat/
+/wetback/
+/whore/
+/wop/
+/68/
+/69/
+/a train/
+/a-hole/
+/a-train/
+/acorn/
+/afternoon delight/
+/aids/
+/anus/
+/arse/
+/ass/
+/assassinate/
+/asses/
+/asshole/
+/assholes/
+/baby batter/
+/back door/
+/back seat/
+/back seat/
+/backdoor/
+/ball sack/
+/balloon knot/
+/balls/
+/bang/
+/bareback/
+/bastard/
+/bearded clam/
+/beastial/
+/beastiality/
+/beastility/
+/beat off/
+/beaver/
+/behead/
+/ben-wa balls/
+/benwa balls/
+/bestial/
+/bestiality/
+/big o/
+/bimbo/
+/bimbo/
+/bitch/
+/bitcher/
+/bitchers/
+/bitches/
+/bitchin/
+/bitching/
+/bits and pieces/
+/blowjob/
+/blowjob/
+/blowjobs/
+/blowjobs/
+/blown/
+/boff/
+/boink/
+/boner/
+/boobies/
+/boobs/
+/breast/
+/breastfeed/
+/breasts/
+/brown eye/
+/brunswick/
+/bukake/
+/bung/
+/bunghole/
+/bush/
+/butt/
+/buttfuck/
+/butthole/
+/camel toe/
+/cans/
+/carpet munch/
+/carpet muncher/
+/carpet munching/
+/cherry/
+/chink/
+/cleveland steamer/
+/clit/
+/clitoris/
+/cock/
+/cocks/
+/cocksuck/
+/cocksucked/
+/cocksucker/
+/cocksucking/
+/cocksucks/
+/coital/
+/coitus/
+/cojones/
+/condom/
+/condon/
+/cooch/
+/coochie/
+/coochy/
+/cooz/
+/cooze/
+/cornhole/
+/crap/
+/cream/
+/crotch/
+/crown jewels/
+/cum/
+/cummer/
+/cumming/
+/cums/
+/cumshot/
+/cunilingus/
+/cunillingus/
+/cunnilingus/
+/cunt/
+/cuntlick/
+/cuntlicker/
+/cuntlicking/
+/cunts/
+/cyberfuc/
+/cyberfuck/
+/cyberfucked/
+/cyberfucker/
+/cyberfuckers/
+/cyberfucking/
+/damn/
+/deep throat/
+/deflower/
+/dell/
+/dick/
+/diddle/
+/diddling/
+/dildo/
+/dildos/
+/dink/
+/dinks/
+/dirk diggler/
+/dirt chute/
+/dirt trail/
+/dirty hitler/
+/dirty sanchez/
+/doggy style/
+/dong/
+/donkey punch/
+/doo doo/
+/double click/
+/douche/
+/douchebag/
+/eat at the Y/
+/ejaculate/
+/ejaculated/
+/ejaculates/
+/ejaculating/
+/ejaculatings/
+/ejaculation/
+/electrocute/
+/eradicate/
+/erection/
+/erections/
+/execute/
+/fag/
+/fagging/
+/faggot/
+/faggs/
+/fagot/
+/fagots/
+/fags/
+/fanny/
+/fart/
+/farted/
+/farting/
+/fartings/
+/farts/
+/farty/
+/fattie/
+/fatty/
+/fecal/
+/feces/
+/felatio/
+/felch/
+/felching/
+/fellatio/
+/fingerfuck/
+/fingerfucked/
+/fingerfucker/
+/fingerfuckers/
+/fingerfucking/
+/fingerfucks/
+/fish taco/
+/fist/
+/fisted/
+/fistfuck/
+/fistfucked/
+/fistfucker/
+/fistfuckers/
+/fistfucking/
+/fistfuckings/
+/fistfucks/
+/fisting/
+/flick you bean/
+/footlong/
+/foreskin/
+/french tickler/
+/fuck/
+/Fuck/
+/fucked/
+/fucker/
+/fuckers/
+/fuckin/
+/fucking/
+/fuckings/
+/fuckme/
+/fucks/
+/Fudgepacker/
+/fuk/
+/fuks/
+/fun bags/
+/fur burger/
+/g spot/
+/gangbang/
+/gangbanged/
+/gangbangs/
+/gash/
+/gaysex/
+/gazungas/
+/genital/
+/genitalia/
+/genitals/
+/gism/
+/giss/
+/gissed/
+/gisses/
+/gissing/
+/gissum/
+/give head/
+/gizm/
+/gizz/
+/gizzed/
+/gizzes/
+/gizzing/
+/gizzum/
+/god damn/
+/goddamn/
+/golden doughnut/
+/golden shower/
+/gonads/
+/goo/
+/grundel/
+/guido/
+/guinni/
+/hair pie/
+/hairy axe wound/
+/hand job/
+/handjob/
+/hard on/
+/hardcoresex/
+/headlights/
+/heeb/
+/hell/
+/herpes/
+/hershey highway/
+/hick/
+/hiv/
+/honey pot/
+/honeypot/
+/hooters/
+/horizontal mambo/
+/horniest/
+/horny/
+/hot carl/
+/hot karl/
+/hotsex/
+/hummer/
+/hump/
+/hung/
+/hustler/
+/hymen/
+/incest/
+/jack off/
+/jack-off/
+/jap/
+/jerk off/
+/jerk-off/
+/jism/
+/jiss/
+/jissed/
+/jisses/
+/jissing/
+/jissum/
+/jiz/
+/jizm/
+/jizz/
+/jizzed/
+/jizzes/
+/jizzing/
+/jizzum/
+/john r/
+/johnson/
+/jugs/
+/jungle bunny/
+/keister/
+/kike/
+/knob/
+/knock off/
+/knockers/
+/kock/
+/kondum/
+/kondums/
+/kum/
+/kummer/
+/kumming/
+/kums/
+/kunilingus/
+/kunt/
+/labia/
+/landing strip/
+/lay some pipe/
+/lesbian/
+/lesbo/
+/lust/
+/lusting/
+/mammaries/
+/man in the canoe/
+/man mustard/
+/masturbate/
+/milk wagons/
+/missionary/
+/molest/
+/moose knuckle/
+/mothafuck/
+/mothafucka/
+/mothafuckas/
+/mothafuckaz/
+/mothafucked/
+/mothafucker/
+/mothafuckers/
+/mothafuckin/
+/mothafucking/
+/mothafuckings/
+/mothafucks/
+/motherfuck/
+/motherfucked/
+/motherfucker/
+/motherfucker/
+/motherfuckers/
+/motherfuckin/
+/motherfucking/
+/motherfuckings/
+/motherfucks/
+/moustache ride/
+/muff/
+/muff diver/
+/naked/
+/nasty/
+/nazi/
+/nigga/
+/niggar/
+/nigger/
+/nigger/
+/niggers/
+/ninja boot/
+/nips/
+/nookie/
+/nooky/
+/nooner/
+/nooner/
+/nude/
+/nut sack/
+/nuts/
+/nymph/
+/nympho/
+/nymphomaniac/
+/old dirt road/
+/orgasim/
+/orgasims/
+/orgasm/
+/orgasms/
+/orgy/
+/party hats/
+/pearl necklace/
+/pecker/
+/pee/
+/penis/
+/penthouse/
+/peter/
+/phellatio/
+/phonesex/
+/phuk/
+/phuked/
+/phuking/
+/phukked/
+/phukking/
+/phuks/
+/phuq/
+/pink canoe/
+/pink taco/
+/piss/
+/pissed/
+/pisser/
+/pissers/
+/pisses/
+/pissin/
+/pissing/
+/pissoff/
+/playboy/
+/poon/
+/poontang/
+/poop chute/
+/pooper/
+/pop your cherry/
+/pork sword/
+/porn/
+/porno/
+/pornography/
+/pornos/
+/prick/
+/pricks/
+/prostitute/
+/pud/
+/pussies/
+/pussies/
+/pussy/
+/pussys/
+/queef/
+/quickie/
+/quikce/
+/qweef/
+/rack/
+/rag/
+/rape/
+/rear end/
+/ribbed/
+/rimjob/
+/rubber/
+/s&m/
+/schlong/
+/Schmuck/
+/screw/
+/scrotal/
+/scrotum/
+/semen/
+/sex/
+/shag/
+/shagbag/
+/shaved/
+/shemale/
+/sheman/
+/Shit/
+/shit/
+/shited/
+/shitfull/
+/shiting/
+/shitings/
+/shits/
+/shitted/
+/shitter/
+/shitters/
+/shitting/
+/shittings/
+/shitty/
+/shlong/
+/simon f/
+/sixty9/
+/sixtynine/
+/skanky/
+/skin flute/
+/sleaze/
+/sleazy/
+/slit/
+/slut/
+/sluts/
+/slutty/
+/smut/
+/smut/
+/snapper/
+/snatch/
+/sodomize/
+/sodomy/
+/spank/
+/sperm/
+/spew/
+/spic/
+/spit/
+/splooge/
+/spoog/
+/spooge/
+/spread legs/
+/spuge/
+/spulge/
+/spunk/
+/starfish/
+/std/
+/stds/
+/stinky pinky/
+/suck/
+/suckers/
+/swallow/
+/taco basher/
+/taco lover/
+/taint/
+/take off your clothes/
+/tallywacker/
+/tampon/
+/tatas/
+/tea bag/
+/tea bagged/
+/tea bagging/
+/teats/
+/testes/
+/testicles/
+/thrash/
+/threesome/
+/threeway/
+/\btit\b/
+/tits/
+/titties/
+/tittys/
+/toe camel/
+/tooshie/
+/tooshy/
+/tramp/
+/transvestite/
+/trouser snake/
+/tuna/
+/tuna taco/
+/turd/
+/turds/
+/turkey neck/
+/tush/
+/twat/
+/twig and berries/
+/uranus/
+/urine/
+/v.d./
+/vagina/
+/vart/
+/vd/
+/vibrator/
+/virgin/
+/vulva/
+/\bwad\b/
+/wang/
+/wanger/
+/wasp/
+/weenie/
+/weiner/
+/wetback/
+/whoopee/
+/whore/
+/woody/
+/wop/
+/xxx/
+/tax/
+/taxes/
+/corporation/
+/tax/
+/wanker/
+/wankers/
+/thieves/
+/thief/
+/lying/
+/thieving/
+/mac/
