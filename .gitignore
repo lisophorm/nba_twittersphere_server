@@ -214,6 +214,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-# Ignore scattered _notes directories that Dreamweaver uses to keep track of its edits and concurrency
-*/_notes
+# Dreamweaver added files
+_notes
 dwsync.xml

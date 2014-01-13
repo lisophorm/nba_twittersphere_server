@@ -385,6 +385,7 @@ class Twitter
                             $fileInfo['basename'] . '"' . "\r\n";
                 $content .= 'Content-Type: ' . $mimeType . "\r\n";
                 $content .= "\r\n";
+
                 $content .= file_get_contents($filePath);
                 $content .= "\r\n";
                 $content .= "--" . $boundary . '--';
