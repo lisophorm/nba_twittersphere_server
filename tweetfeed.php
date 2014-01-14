@@ -63,7 +63,7 @@ if(isset($GET['int'])) {
 
 //and not EXISTS (select * from published_tweets WHERE published_tweets.sourceId=tweets.sourceId) order by mysqldate desc limit
 
-$sql = "SELECT * FROM tweets where approved=1 and mysqldate < DATE_SUB(now(),INTERVAL 0 MINUTE) ".$tweetQuery." and not EXISTS (select * from published_tweets WHERE published_tweets.sourceId=tweets.sourceId) order by mysqldate desc limit ".$totaltweets;
+$sql = "SELECT * FROM tweets where approved=1 and mysqldate < DATE_SUB(now(),INTERVAL ".$tweetdelay." MINUTE) ".$tweetQuery." and not EXISTS (select * from published_tweets WHERE published_tweets.sourceId=tweets.sourceId and published_tweets.session_id='".$sessionval."') order by mysqldate desc limit ".$totaltweets;
 
 if (!$result = mysql_query($sql))
    die("Query reset tweetdisplay failed.".$sql);
@@ -85,6 +85,9 @@ if(mysql_num_rows($result)>0)
 				
 		$get_info['text'] = preg_replace('/http:\/\/[^\s]*/i', '\1<font color=\"#009BDB\">$0</font>', $get_info['text']);
 		$get_info['lasttweet']=$_COOKIE['lastTweet'];
+		
+		$get_info['mysqldate']=date("d-m-Y H:s",strtotime($get_info['mysqldate']));
+		
 		$rowset[]= $get_info;
 
 			

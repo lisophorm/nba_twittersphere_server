@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50533
 File Encoding         : 65001
 
-Date: 2014-01-13 17:34:33
+Date: 2014-01-14 12:18:50
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -35,7 +35,7 @@ CREATE TABLE `access` (
   `to_user_id` int(24) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `twitter_id` (`password`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=32448 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=32450 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Table structure for clients
@@ -56,9 +56,10 @@ CREATE TABLE `currenttweet` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `current_tweet` int(32) DEFAULT NULL,
   `session_id` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `last_time_used` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `session_id` (`session_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Table structure for instagram
@@ -119,7 +120,7 @@ CREATE TABLE `published_tweets` (
   `session_id` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `twitter_id` (`sourceId`,`session_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=654891 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=656288 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Table structure for tweets
@@ -147,5 +148,6 @@ CREATE TABLE `tweets` (
   `hasText` int(3) DEFAULT '1',
   `sweardebug` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `twitter_id` (`sourceId`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=654895 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  UNIQUE KEY `twitter_id` (`sourceId`) USING BTREE,
+  KEY `twiter_date` (`mysqldate`)
+) ENGINE=MyISAM AUTO_INCREMENT=655641 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

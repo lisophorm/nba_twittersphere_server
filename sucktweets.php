@@ -102,7 +102,7 @@ echo "last pulled tweet:".$_COOKIE['lastTweet']."<br/>";
     
 require_once("twitter.php");
 $t = new Twitter('1kAXtd644bgJ4qyDNl51w','3lBlY9gqVrmpaij3cvfSQV2CrB2N6x7u9KiQ268GHQ');
-$content=$t->searchTweets("#nba");
+$content=$t->searchTweets($twitSearchQuery);
 
 //$jsonobj = json_decode($content);
 

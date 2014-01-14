@@ -6,4 +6,5 @@ header ("Content-Type:text/xml");
  
 //output the XML data
 echo "PONG!";
+echo $_SERVER['DOCUMENT_ROOT'];
 ?>

@@ -114,7 +114,7 @@ if (isset($_GET['pageNum_tweets'])) {
 $startRow_tweets = $pageNum_tweets * $maxRows_tweets;
 
 mysql_select_db($database_localhost, $localhost);
-$query_tweets = "SELECT id, approved, mysqldate, panic,name, flagged,text, profilePicture,picture,sweardebug FROM tweets ORDER BY mysqldate DESC ";
+$query_tweets = "SELECT * FROM tweets ORDER BY mysqldate DESC ";
 $query_limit_tweets = sprintf("%s LIMIT %d, %d", $query_tweets, $startRow_tweets, $maxRows_tweets);
 $tweets = mysql_query($query_limit_tweets, $localhost) or die("$query_limit_tweets".mysql_error());
 $row_tweets = mysql_fetch_assoc($tweets);
@@ -161,6 +161,7 @@ Records <?php echo ($startRow_tweets + 1) ?> to <?php echo min($startRow_tweets 
     <td>approved</td>
     <td>automatic<br />
       flag</td>
+    <td>Tweet id</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>mysqldate</td>
@@ -175,6 +176,7 @@ Records <?php echo ($startRow_tweets + 1) ?> to <?php echo min($startRow_tweets 
       <td><?php echo $row_tweets['id']; ?></td>
       <td><div id="cell<?php echo $row_tweets['id']; ?>"><a href="censor.php?approved=1&amp;id=<?php echo $row_tweets['id']; ?>" class="allow">allow</a> / <a href="censor.php?approved=0&amp;id=<?php echo $row_tweets['id']; ?>" class="block">block</a></div></td>
       <td><?php echo $row_tweets['flagged']; ?></td>
+      <td><?php echo $row_tweets['sourceId']; ?></td>
       <td><div class="status"><?php echo $row_tweets['approved']==1?"APPROVED":"BLOCKED";  ?></div></td>
       <td><div class="panic"><a class="panicbutton" href="panic.php?id=<?php echo $row_tweets['id']; ?>"><img src="../images/<?php 
 	  
