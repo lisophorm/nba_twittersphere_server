@@ -180,13 +180,13 @@ Records <?php echo ($startRow_tweets + 1) ?> to <?php echo min($startRow_tweets 
       <td><div class="status"><?php echo $row_tweets['approved']==1?"APPROVED":"BLOCKED";  ?></div></td>
       <td><div class="panic"><a class="panicbutton" href="panic.php?id=<?php echo $row_tweets['id']; ?>"><img src="../images/<?php 
 	  
-	  if($row_tweets['panic']=="") {
+	  if ($row_tweets['approved']==1) {
+		  echo "panic.png";
+	  } else if($row_tweets['panic']=="") {
 		  echo "blank.png";
 	  } else if ($row_tweets['panic']==1) {
 		  echo "ok.png";
-	  } else {
-		  echo "panic.png";
-	  }
+	  } 
 	  
 	  
 	  ?>" width="50" height="50" border="0" /></a></div></td>

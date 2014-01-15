@@ -110,11 +110,15 @@ if ((isset($_GET["id"]))) {
   mysql_select_db($database_localhost, $localhost);
   $Result1 = mysql_query($updateSQL, $localhost) or die(mysql_error());
   
-    $updateSQL = sprintf("UPDATE currenttweet SET current_tweet=%s",
-                       GetSQLValueString($_GET["id"], "text"));
-
-  mysql_select_db($database_localhost, $localhost);
-  $Result1 = mysql_query($updateSQL, $localhost) or die(mysql_error());
+  if($_GET["approved"]==1) {
+  
+		$updateSQL = sprintf("UPDATE currenttweet SET current_tweet=%s",
+						   GetSQLValueString($_GET["id"], "text"));
+	
+	  mysql_select_db($database_localhost, $localhost);
+	  $Result1 = mysql_query($updateSQL, $localhost) or die(mysql_error());
+  
+  }
   
 }
 ?>
